@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 body {
-  background-color: lime;
+  background-color: black;
+  color: white;
+  padding: 50px;
 }
 
 h1 {
-  color: blue;
   text-align: center;
 }
 
@@ -16,39 +17,40 @@ h2 {
 .card {
   display: flex;
   padding: 10px;
-  margin: 10px;
-  margin-left: 50px;
-  margin-right: 50px;
   flex-direction: column;
   align-items: center;
-  background-color: red;
+  /* background-color: red; */
 }
 
 .actions {
-  background-color: red;
+  /* background-color: black; */
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
-a.button1{
- display:inline-block;
- padding:0.35em 1.2em;
- border:0.1em solid #FFFFFF;
- margin:0 0.3em 0.3em 0;
- border-radius:0.12em;
- box-sizing: border-box;
- text-decoration:none;
- font-family:'Roboto',sans-serif;
- font-weight:300;
- color:#FFFFFF;
- text-align:center;
- transition: all 0.2s;
+a.button {
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  border: 0.1em solid #FFFFFF;
+  margin: 0.3em;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Roboto',sans-serif;
+  font-weight: 300;
+  color: #FFFFFF;
+  text-align: center;
+  transition: all 0.2s;
 }
-a.button1:hover{
- color:#000000;
- background-color:#FFFFFF;
+a.button:hover {
+  color: #000000;
+  background-color: #FFFFFF;
 }
-@media all and (max-width:30em){
- a.button1{
-  display:block;
-  margin:0.4em auto;
- }
+
+@media all and (max-width:30em) {
+  a.button {
+    display: block;
+    margin: 0.4em auto;
+  }
 }
